@@ -1,13 +1,87 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: arial,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.main{
+  width:100%;
+  height: 100%;
+}
+
+.login-form {
+  max-width: 500px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+
+
+.card{
+  width:230px;
+  margin-bottom:20px;
+}
+
+.card-img-top{
+    max-width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    height: 180px;
+}
+.profileName{
+   width:48px;
+   border-radius:50%;
+   margin:10px;
+}    
+.navbar .row{
+  width:100%;
+  margin-bottom:40px;
+  border-bottom:1px solid #ccc;
+}
+.navbar .row h1{
+  margin: 10px 0px;
+  font-size: 30px;
+}
+.navbar span{
+  font-size: 16px;
+  font-weight:bold;
+}
+.navbar a{
+  background: url("img/logout.png") no-repeat;
+  width: 26px;
+  height: 26px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+.twitter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+   .navbar .row h1{
+      font-size: 24px;
+   }
+  .navbar span {
+    font-size: 12px;
+  }  
+  .profileName {
+    width: 24px;
+  }
 }
